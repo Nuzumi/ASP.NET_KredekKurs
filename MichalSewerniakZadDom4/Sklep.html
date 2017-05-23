@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+    <link href="bootstrap.min.css" rel="stylesheet" />
+
+    <title>Sklep</title>
+    <script src="jquery-3.1.1.slim.min.js"></script>
+    <script src="tether.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="Sklep.js" type="text/javascript" language="javascript"></script>
+
+</head>
+<body>
+    <ul class="nav nav-tabs" id="myTab">
+        <li ><a class="nav-link active" href="#home">Sklep</a></li>
+        <li><a class="nav-link koszyk" href="#koszyk">koszyk</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="list-group jumbotron">
+                        <a href="#" class="list-group-item list-group-item-info" id="poLewej" style="display:none">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 jumbotron">
+                    <ul class="list-group" id="lista">
+                        <li class="list-group-item" id="items" style="display:none"><!--style="display:none"  flex-column align-item-start-->
+                            <button class="toBuyMore btn btn-ssuccess col-md-12" data-toggle="tooltip"
+                                    data-placement="top" title="kup to">
+                                <div class="flex-column align-item-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="NazwaW">Nazwa</h5>
+                                        <h6 class="price">cena</h6>
+                                    </div>
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <small class="tex-muted des">opis</small>
+                                    </div>
+                                </div>
+                            </button> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="koszyk" role="tabpanel">
+            <button id="buy" class="btn btn-ssuccess col-md-6" data-toggle="tooltip" data-placement="top" title="kup wszystko">
+                Zakończ
+            </button>
+            <ul class="list-group" id="shopCart">
+                <li class="list-group-item flex-column align-item-start col-md-6" id="cartItem" style="display:none">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="NazwaW">Nazwa</h5>
+                        <h6 class="price">cena</h6>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <small class="tex-muted des">opis</small>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="thisIsTheEnd">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Zaplacono</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>zakonczono zakupy pomyslnie</p>
+                    <p>wlasnie wydałes swoje ostatnie pieniadze</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

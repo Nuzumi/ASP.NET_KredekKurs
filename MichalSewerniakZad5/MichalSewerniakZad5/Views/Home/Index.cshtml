@@ -1,0 +1,37 @@
+﻿@model List<MichalSewerniakZad5.Models.Nadawca>
+
+@{
+    ViewBag.Title = "Nadawcy";
+}
+
+<h2>Nadawcy</h2>
+
+<div class="container">
+    <div class="row">
+
+        @foreach (var nad in Model)
+            {
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">@nad.Imie  @nad.Nazwisko</h3>
+                    </div>
+                    <div class="panel-body" style="word-break: break-word">
+                        @using (Html.BeginForm("Delete", "Home", FormMethod.Post))
+                        {
+                            @Html.Hidden("id", nad.Id)
+                            <button type="submit" class="btn btn-danger pull-right">Usuń</button>
+                        }
+                        @Html.ActionLink("przesylki","ShowPrzesylki","Paczka",new { nadawcaId = nad.Id},new { @class = "btn btn-primary"})
+                    </div>
+                    <div class="panel-footer">
+                        @if(nad.Adres != null)
+                        {
+                            <small>Adres: @nad.Adres.Miasto @nad.Adres.Ulica @nad.Adres.NumerDomu</small>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

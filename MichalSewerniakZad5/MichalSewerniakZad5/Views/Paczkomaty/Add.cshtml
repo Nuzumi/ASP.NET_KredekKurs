@@ -1,0 +1,27 @@
+﻿@model MichalSewerniakZad5.Models.Paczkomat
+
+@{
+    ViewBag.Title = "dodaj paczkomat";
+}
+
+<h2>Dodaj paczkoamt</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.Label("kod paczkomatu")
+        @Html.TextBoxFor(m => m.Kod, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.Label("Adres")<br>
+        @Html.Label("Miasto")
+        @Html.TextBoxFor(m => m.Adres.Miasto, new { @class = "form-control" })
+        @Html.Label("Ulica")
+        @Html.TextBoxFor(m => m.Adres.Ulica, new { @class = "form-control" })
+        @Html.Label("Numer")
+        @Html.TextBoxFor(m => m.Adres.NumerDomu, new { @class = "form-control" })
+    </div>
+
+
+    <button type="submit" class="btn btn-success">Dodaj</button>
+}

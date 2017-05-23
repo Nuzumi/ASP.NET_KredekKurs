@@ -1,0 +1,29 @@
+﻿@model List<MichalSewerniakZad5.Models.Paczkomat>
+
+@{
+    ViewBag.Title = "Paczkomaty";
+}
+
+<h2>paczkomaty</h2>
+
+<div class="container">
+    <div class="row">
+
+        @foreach (var paczkomat in Model)
+            {
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">@paczkomat.Kod </h3>
+                    </div>
+                    <div class="panel-body">
+                        @Html.ActionLink("nadaj paczke","Send","Paczka",new { id = paczkomat.Id},new { @class = "btn btn-info"})
+                    </div>
+                    <div class="panel-footer">
+                        Adres: @paczkomat.Adres.Miasto @paczkomat.Adres.Ulica @paczkomat.Adres.NumerDomu
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

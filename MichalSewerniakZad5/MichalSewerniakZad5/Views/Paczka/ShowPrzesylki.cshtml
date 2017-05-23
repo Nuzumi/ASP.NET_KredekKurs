@@ -1,0 +1,54 @@
+﻿@model List<MichalSewerniakZad5.Models.Przesylka>
+
+@{
+    ViewBag.Title = "Przesylki nadawcy";
+}
+
+<h2>Przesylki nadawcy</h2>
+
+@if (Model.Count != 0)
+{
+    <div class="container">
+        <div class="col-md-12">
+            <div class="panel panel-info">
+                <div class="panel-body">
+                    Przesylki @Model[0].Nadawca.Imie @Model[0].Nadawca.Nazwisko
+                </div>
+            </div>
+        </div>
+        @foreach (var przesylka in Model)
+        {
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">nadana do odbiorcy @przesylka.Odbiorca.NumerTelefonu</h3>
+                    </div>
+                    <div class="panel-body" style="word-break: break-word">
+                        @using (Html.BeginForm("Delete", "Paczka", FormMethod.Post))
+                        {
+                            @Html.Hidden("id", przesylka.Id)
+                            <button type="submit" class="btn btn-danger pull-right">Usuń</button>
+                        }
+                        Waga: @przesylka.Waga
+                    </div>
+                    <div class="panel-footer">
+                        @if (przesylka.Paczkomat != null)
+                        {
+                            <small>nadana do paczkomatu: @przesylka.Paczkomat.Kod </small>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="col-md-12">
+        <div class="panel panel-info">
+            <div class="panel-body">
+                Brak przesylek.
+            </div>
+        </div>
+    </div>
+}

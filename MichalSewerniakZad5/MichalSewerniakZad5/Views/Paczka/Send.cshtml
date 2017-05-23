@@ -1,0 +1,30 @@
+﻿@model MichalSewerniakZad5.Models.Przesylka
+
+@{
+    ViewBag.Title = "Send";
+}
+
+<h2>Send</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.Label("Nadawca")<br>
+        @Html.Label("Imie")
+        @Html.TextBoxFor(m => m.Nadawca.Imie, new { @class = "form-control" })
+        @Html.Label("nazwisko")
+        @Html.TextBoxFor(m => m.Nadawca.Nazwisko, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.Label("Odbiorca (numer telefonu)")
+        @Html.TextBoxFor(m => m.Odbiorca.NumerTelefonu, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.Label("waga paczki (g)")
+        @Html.TextBoxFor(m => m.Waga, new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-success">nadaj</button>
+}
+
+

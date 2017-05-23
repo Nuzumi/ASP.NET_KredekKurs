@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{72F26514-CF2A-4415-B60D-E0CFB9E0AB28}"
+	ProjectSection(SolutionItems) = preProject
+		bootstrap.min.css = bootstrap.min.css
+		bootstrap.min.js = bootstrap.min.js
+		jquery-3.1.1.slim.min.js = jquery-3.1.1.slim.min.js
+		Sklep.html = Sklep.html
+		Sklep.js = Sklep.js
+		tether.min.js = tether.min.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

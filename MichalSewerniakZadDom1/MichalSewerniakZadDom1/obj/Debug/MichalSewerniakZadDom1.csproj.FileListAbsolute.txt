@@ -1,0 +1,10 @@
+D:\Nowy folder\Kredek-Kurs\MichalSewerniakZadDom1\MichalSewerniakZadDom1\bin\Debug\MichalSewerniakZadDom1.exe.config
+D:\Nowy folder\Kredek-Kurs\MichalSewerniakZadDom1\MichalSewerniakZadDom1\bin\Debug\MichalSewerniakZadDom1.exe
+D:\Nowy folder\Kredek-Kurs\MichalSewerniakZadDom1\MichalSewerniakZadDom1\bin\Debug\MichalSewerniakZadDom1.pdb
+D:\Nowy folder\Kredek-Kurs\MichalSewerniakZadDom1\MichalSewerniakZadDom1\obj\Debug\MichalSewerniakZadDom1.csprojResolveAssemblyReference.cache
+D:\Nowy folder\Kredek-Kurs\MichalSewerniakZadDom1\MichalSewerniakZadDom1\obj\Debug\MichalSewerniakZadDom1.FormLoginWindow.resources
+D:\Nowy folder\Kredek-Kurs\MichalSewerniakZadDom1\MichalSewerniakZadDom1\obj\Debug\MichalSewerniakZadDom1.Properties.Resources.resources
+D:\Nowy folder\Kredek-Kurs\MichalSewerniakZadDom1\MichalSewerniakZadDom1\obj\Debug\MichalSewerniakZadDom1.csproj.GenerateResource.Cache
+D:\Nowy folder\Kredek-Kurs\MichalSewerniakZadDom1\MichalSewerniakZadDom1\obj\Debug\MichalSewerniakZadDom1.exe
+D:\Nowy folder\Kredek-Kurs\MichalSewerniakZadDom1\MichalSewerniakZadDom1\obj\Debug\MichalSewerniakZadDom1.pdb
+D:\Nowy folder\Kredek-Kurs\MichalSewerniakZadDom1\MichalSewerniakZadDom1\obj\Debug\MichalSewerniakZadDom1.FormMemeoScrean.resources
